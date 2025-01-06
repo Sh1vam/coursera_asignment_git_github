@@ -15,7 +15,9 @@
 def compound_interest(p, t, r):
     return p * (pow((1 + r / 100), t))
 
-
+def compound_interest_equivalent(p, t, r):
+    return p * (((1 + r) / 100))**t))
+    
 if __name__ == "__main__":
     p = float(input("Enter the principal amount: "))
     t = float(input("Enter the time period: "))
